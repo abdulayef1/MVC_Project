@@ -1,0 +1,19 @@
+﻿@model ShippingItem
+@{
+	ViewData["Title"] = "Detail";
+}
+
+<div class="content-wrapper" >
+	<div style="display:flex; flex-direction:column; justify-content: center; align-items:center; padding:20px 0; gap:20px; background-color: white">
+
+		<h1>Detail</h1>
+		<h3>@Model.Tittle</h3>
+		<h6>@Model.Description</h6>
+		<img src="~/assets/images/shipping/icon/@Model.Photo" style="width: 70px">
+		<a asp-action="Index" class="btn btn-success">
+			<i class="mdi mdi-keyboard-return"></i>
+		</a>
+	</div>
+</div>
+
+

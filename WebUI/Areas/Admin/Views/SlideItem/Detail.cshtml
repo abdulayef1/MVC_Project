@@ -1,0 +1,24 @@
+﻿@model SlideItem
+@{
+	ViewData["Title"] = "Detail";
+}
+
+<div class="content-wrapper" >
+	<div style="display:flex; flex-direction:column; justify-content: center; align-items:center; padding:20px 0; gap:20px; background-color: white">
+
+		<h1>Detail</h1>
+		<h3>@Model.Title</h3>
+		<h6>@Model.Description</h6>		
+		<h6>@Model.Offer</h6>
+
+		<div class="expand-width" data-depth="0.2">
+			<img style="width:200px;height:auto;" src="~/assets/images/website-images//@Model.Phote"
+				 alt="Inner Image" />
+		</div>
+		<a asp-action="Index" class="btn btn-success">
+			<i class="mdi mdi-keyboard-return"></i>
+		</a>
+	</div>
+</div>
+
+

@@ -1,0 +1,35 @@
+﻿@model ShippingItem
+@{
+    ViewData["Title"] = "Update";
+}
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Update Shipping Item</h4>
+                <form class="forms-sample" method="post">
+                    <img src="~/assets/images/shipping/icon/@Model.Photo" style="width: 70px">
+                    <div class="form-group">
+                        <label>Photo</label>
+                        <input asp-for="Photo" class="form-control" placeholder="Photo">
+                        <span class="text-danger" asp-validation-for="Photo"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Tittle</label>
+                        <input asp-for="Tittle" class="form-control" placeholder="Tittle">
+                        <span class="text-danger" asp-validation-for="Tittle"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <input asp-for="Description" class="form-control" placeholder="Description">
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Update</button>
+                    <button asp-action="Index" class="btn btn-light">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

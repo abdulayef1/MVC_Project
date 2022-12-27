@@ -103,6 +103,12 @@
               "target": "Package",
               "version": "[6.0.12, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.12, )"
@@ -158,6 +164,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\PrProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\PrProject\\Core\\Core.csproj"
+              },
               "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\PrProject\\DataAccess\\DataAccess.csproj": {
                 "projectPath": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\PrProject\\DataAccess\\DataAccess.csproj"
               }
@@ -174,6 +183,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.11, )"

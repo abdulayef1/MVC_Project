@@ -1,0 +1,33 @@
+﻿@model ShippingItem
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Create New Shipping Item</h4>
+                  <form class="forms-sample" method="post">
+                    <div class="form-group">
+                      <label>Photo</label>
+                        <input  asp-for="Photo"   class="form-control" placeholder="Photo">
+                        <span class="text-danger" asp-validation-for="Photo"></span>
+                    </div>
+                    <div class="form-group">
+                      <label >Tittle</label>
+                      <input asp-for= "Tittle" class="form-control"  placeholder="Tittle">
+                        <span class="text-danger" asp-validation-for="Tittle"></span>
+                    </div>
+                    <div class="form-group">
+                      <label>Description</label>
+                        <input asp-for="Description" class="form-control" placeholder="Description">
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Create</button>
+                    <button asp-action="Index" class="btn btn-light">Cancel</button>
+                  </form>
+                </div>
+              </div>
+            </div>   
+</div>
