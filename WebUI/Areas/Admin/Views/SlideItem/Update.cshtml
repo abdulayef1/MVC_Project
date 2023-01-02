@@ -1,0 +1,48 @@
+﻿
+
+@using WebUI.Areas.Admin.ViewModels.Slider
+@model SlideUpdateVM
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Update Slide Item</h4>
+
+                <div class="expand-width" data-depth="0.2">
+                    <img style="width:200px;height:auto;" src="~/assets/images/website-images/@Model.PhotoPath"
+                         alt="Inner Image" />
+                </div>
+                <form enctype="multipart/form-data" class="forms-sample" method="post">
+                    <div class="form-group">
+                        <label>Photo</label>
+                        <input asp-for="Phote" accept="image/*" class="form-control" placeholder="Photo">
+                        <span class="text-danger" asp-validation-for="Phote"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Tittle</label>
+                        <input asp-for="Title" class="form-control" placeholder="Tittle">
+                        <span class="text-danger" asp-validation-for="Title"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <input asp-for="Description" class="form-control" placeholder="Description">
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Offer</label>
+                        <input asp-for="Offer" class="form-control" placeholder="Offer">
+                        <span class="text-danger" asp-validation-for="Offer"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Update</button>
+                    <button asp-action="Index" class="btn btn-light">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

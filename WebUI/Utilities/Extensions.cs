@@ -24,7 +24,7 @@ namespace WebUI.Utilities
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Create))
                 {
                    await file.CopyToAsync(fileStream);
-                    return filePath;
+                    return fileName;
                 }
             }
             catch (Exception)

@@ -26,4 +26,11 @@ public static class Helper
         }
         return false;
     }
+
+    public enum RoleType:byte
+    {
+        Admin,
+        Moderator,
+        Member
+    }
 }
