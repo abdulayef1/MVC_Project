@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RxKHZeR+FrxGD6Kr7cCkzx96m1w50ZFuG57T/XKZy7c=",
+  "Hash": "jgM4UTVonE7Vzc9t3LT6G4X7oEIoSoAEwFYavXgqzaE=",
   "Source": "WebUI",
   "BasePath": "_content/WebUI",
   "Mode": "Default",
@@ -3672,6 +3672,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\1-2-120x120.webp"
     },
     {
+      "Identity": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\PrProject\\WebUI\\wwwroot\\assets\\images\\website-images\\1-2-270x300.jpg",
+      "SourceId": "WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\PrProject\\WebUI\\wwwroot\\",
+      "BasePath": "_content/WebUI",
+      "RelativePath": "assets/images/website-images/1-2-270x300.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\1-2-270x300.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\PrProject\\WebUI\\wwwroot\\assets\\images\\website-images\\1-2-310x220.jpg",
       "SourceId": "WebUI",
       "SourceType": "Discovered",
@@ -5132,6 +5149,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\scss\\style.scss"
+    },
+    {
+      "Identity": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\PrProject\\WebUI\\wwwroot\\js\\JavaScript.js",
+      "SourceId": "WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Мухаммед\\Desktop\\WORKSPACE\\PrProject\\WebUI\\wwwroot\\",
+      "BasePath": "_content/WebUI",
+      "RelativePath": "js/JavaScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\JavaScript.js"
     }
   ]
 }

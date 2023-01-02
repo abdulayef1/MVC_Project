@@ -1,4 +1,5 @@
 
+using Business.Services;
 using Core.Entities;
 using DataAccess.Contexts;
 using Microsoft.AspNetCore.Identity;
@@ -35,6 +36,9 @@ builder.Services.ConfigureApplicationCookie(opt =>
     opt.LoginPath = "/Auth/Login";
 });
 
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+
+builder.Services.AddTransient<IMailService, Business.Services.MailService>();
 
 
 builder.Services.AddControllersWithViews();

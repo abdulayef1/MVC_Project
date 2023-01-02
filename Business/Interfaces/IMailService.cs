@@ -1,8 +1,8 @@
 ﻿using Business.DTOs;
 
-namespace Business.Interfacesl;
+namespace Business.Services;
 
 public interface IMailService
 {
-    Task SendEmailAsync(MailRequestDTO mailRequestDTO);
+    Task SendEmailAsync(MailRequestDto mailRequest);
 }

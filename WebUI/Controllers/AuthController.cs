@@ -1,4 +1,6 @@
 ﻿
+using Business.DTOs;
+using Business.Services;
 using Core.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -13,12 +15,14 @@ public class AuthController : Controller
     private readonly UserManager<AppUser> _userManager;
     private readonly SignInManager<AppUser> _signInManager;
     private readonly RoleManager<IdentityRole> _roleManager;
+    private readonly IMailService _mailService;
 
-    public AuthController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager)
+    public AuthController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager,IMailService mailService)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _roleManager = roleManager;
+        _mailService = mailService;
 
     }
 
@@ -149,7 +153,10 @@ public class AuthController : Controller
 
         string token = await _userManager.GeneratePasswordResetTokenAsync(user);
         string? link = Url.Action("ResetPassword", "Auth", new { userId = user.Id, token = token }, HttpContext.Request.Scheme);
-        return RedirectToAction(nameof(Login));
+
+        //await _mailService.SendEmailAsync(new MailRequestDto {ToEmail=user.Email,Subject="Reset Password",Body=$"<a href={link}>click here</a>" });
+
+        return Json(link);
 
     }
 

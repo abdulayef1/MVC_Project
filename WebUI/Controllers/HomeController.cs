@@ -1,4 +1,5 @@
-﻿using DataAccess.Contexts;
+﻿using Core.Entities;
+using DataAccess.Contexts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebUI.ViewModels;
@@ -17,12 +18,18 @@ namespace WebUI.Controllers
         {
             HomeViewModel hwm = new HomeViewModel()
             {
-                SlideItems=_context.SlideItems.AsNoTracking(),
-                ShippingItems=_context.ShippingItems.AsNoTracking()
+                SlideItems = _context.SlideItems.AsNoTracking(),
+                ShippingItems = _context.ShippingItems.AsNoTracking(),
+                Products = _context.Products.Take(8).AsNoTracking()
             };
 
             return View(hwm);
         } 
+
+        
+
+
+
         public IActionResult Test()
         {
             return View();
